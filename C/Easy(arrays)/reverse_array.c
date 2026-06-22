@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void main()
+int main()
 {
     int a[100],n,max,max_2;
     scanf("%d",&n);
@@ -12,4 +12,5 @@ void main()
     {
         printf("%d ",a[i]);
     }
+    return 0;
 }

@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void main()
+int main()
 {
     int a[100],n,count;
     count = 0;
@@ -18,4 +18,5 @@ void main()
             break;
         }
     }
+    return 0;
 }

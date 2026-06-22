@@ -29,5 +29,6 @@ int main()
     {
         printf("%d ",zeros[i]);
     }
+    
     return 0;
 }

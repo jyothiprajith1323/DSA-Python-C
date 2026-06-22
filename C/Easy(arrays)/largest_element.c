@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void main()
+int main()
 {
     int a[100],n,max;
     scanf("%d",&n);
@@ -17,4 +17,5 @@ void main()
         }
     }
     printf("The largest element is %d",max);
+    return 0;
 }

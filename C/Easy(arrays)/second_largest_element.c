@@ -1,29 +1,46 @@
 #include<stdio.h>
 
-void main()
+int main()
 {
-    int a[100],n,max,max_2;
-    scanf("%d",&n);
-    for(int i = 0 ; i < n ;i++)
-    {
-        scanf("%d",&a[i]);
+    int a[100], n;
+    scanf("%d", &n);
+
+    if (n < 2) {
+        printf("Need at least two numbers\n");
+        return 0;
     }
-    max = a[0];
-    max_2 = a[0];
-    for(int i = 0 ; i<n ; i++)
+
+    for (int i = 0; i < n; i++)
     {
-        if(a[i]>max)
+        scanf("%d", &a[i]);
+    }
+
+    int max = a[0];
+    int max_2 = a[0];
+
+    for (int i = 1; i < n; i++)
+    {
+        if (a[i] > max)
         {
+            max_2 = max;
             max = a[i];
         }
-        for(int j = 0 ; j< i-1 ; j++)
-            {
-                if(a[j]<max)
-                {
-                    max_2 = a[j];
-                }
-            }
+        else if (a[i] > max_2 && a[i] != max)
+        {
+            max_2 = a[i];
+        }
     }
-    printf("max = %d\n",max);
-    printf("max_2 = %d",max_2);
+
+    if (max_2 == max)
+    {
+        printf("max = %d\n", max);
+        printf("There is no second distinct maximum\n");
+    }
+    else
+    {
+        printf("max = %d\n", max);
+        printf("max_2 = %d\n", max_2);
+    }
+
+    return 0;
 }

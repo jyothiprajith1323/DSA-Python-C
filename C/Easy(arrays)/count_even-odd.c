@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     int a[100],n,odd = 0 ,even = 0;
     int odd_no[100],even_no[100];
@@ -33,4 +33,5 @@ void main()
     {
         printf("%d ",even_no[i]);
     }
+    return 0;
 }

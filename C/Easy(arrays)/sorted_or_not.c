@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main()
+int main()
 {
     int a[100],sorted,n;
     sorted = 0;
@@ -23,4 +23,5 @@ void main()
     {
         printf("Sorted");
     }
+    return 0;
 }
